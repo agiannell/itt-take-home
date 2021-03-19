@@ -1,0 +1,26 @@
+$primary-color: #1985a1;
+$secondary-color: #4c5c68;
+$grad-dark: #46494c;
+$grad-med: #c5c3c6;
+$grad-lite: #dcdcdd;
+$text-color: #dcdcdd;
+
+@mixin flex($justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin border($color) {
+  border: 2px dotted $color;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

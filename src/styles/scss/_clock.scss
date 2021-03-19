@@ -1,0 +1,17 @@
+.clock-container {
+  background-color: rgba($primary-color, 0.4);
+  width: 25%;
+  padding: 40px 0;
+  border: 1px solid $text-color;
+  border-radius: 10px;
+  // box-shadow: 0 0 5px 5px rgba(0,0,0,0.8);
+  @include flex(center, column);
+  cursor: pointer;
+  margin: 50px 0;
+}
+
+.clock-module {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 20px 0;
+}

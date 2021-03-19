@@ -1,0 +1,15 @@
+.loading-container {
+  @include flex(center, row);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  z-index: 1;
+  transition: .5s;
+
+  h3 {
+    font-size: 4rem;
+    color: $text-color;
+    margin-left: 50px;
+  }
+}

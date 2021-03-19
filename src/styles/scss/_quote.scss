@@ -1,0 +1,36 @@
+.quote-container {
+  background-color: rgba($primary-color, 0.9);
+  width: 33%;
+  min-height: 120px;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 10px 10px 0;
+  @include flex(flex-start, column);
+  align-items: flex-start;
+}
+
+.quote-footer {
+  @include flex(space-between, row);
+  width: 100%;
+  margin-top: 10px;
+
+  h4 {
+    transition: 0.2s;
+    animation: fade 0.2s;
+  }
+
+  span {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: 700;
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

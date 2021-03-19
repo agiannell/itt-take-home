@@ -1,0 +1,71 @@
+@import "./scss/config";
+@import "./scss/quote";
+@import "./scss/weather";
+@import "./scss/clock";
+@import "./scss/loading";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: $text-color;
+  @include flex(center, column);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.2s;
+  background-color: $secondary-color;
+  color: $text-color;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.hidden {
+  display: none;
+}
